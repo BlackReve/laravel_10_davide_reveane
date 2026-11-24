@@ -1,0 +1,13 @@
+ <div class="card mb-3" style="width: 18rem;">
+    @if (!$book->img)
+        <img src="https://picsum.photos/200/300" class="card-img-top cardImg img-fluid" alt="poster di {{ $title }}">
+    @else
+         <img src="{{Storage::url($book->img)}}" class="card-img-top cardImg img-fluid" alt="poster di '{{ $title }}'">
+    @endif
+     <div class="card-body">
+         <h5 class="card-title">{{ $book->title }}</h5>
+         <h5 class="card-title muted">{{ $book->author }} - {{ $book->year }}</h5>
+         <p class="card-text">{{ $book->plot }}</p>
+         <a href="" class="btn btn-primary">Leggi di più</a>
+     </div>
+ </div>
