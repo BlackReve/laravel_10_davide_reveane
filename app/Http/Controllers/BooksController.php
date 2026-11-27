@@ -42,7 +42,7 @@ class BooksController extends Controller
         'author' => $request->author,
         'year' => $request->year,
         'plot' => $request->plot,
-        'img' => $request->file('img')->store('public/images'),
+        'img' => $request->file('img')->store('images', 'public'),
         ]);
 
         return redirect()->route('homepage')->with('successMessage', 'Hai correttamente inserito il tuo libro');
