@@ -39,7 +39,7 @@ class BookRequest extends FormRequest
             'year.numeric'=>'Il campo anno deve essere numerico',
             'author.required'=>'Il campo autore è obbligatorio',
             'plot.required'=>'Il campo trama è obbligatorio',
-            'plot.min'=>'La trama deve avere almeno 5 caratter',
+            'plot.min'=>'La trama deve avere almeno 5 caratteri',
             'img.required'=>'L\'immagine è obbligatoria',
             'img.image'=>'Il file deve essere di tipo immagine'
         ];
